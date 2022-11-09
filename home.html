@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMIS-maryland</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+
+    <div class="outer_wrapper"><div ondblclick="history.go(0)" class="outer">
+      <h1>Homeless management information system(HMIS)-Minister of Safety-FDRE(ETH)</h1>
+   <div class="extra">
+         <!-- start data filling -->
+         <form  action="http://localhost:8888/table"><button>launch the programme (do this only once to save time)</button></form><br>
+   
+          <!-- demographic data -->
+      <h3> Biographic data</h3>
+      <form method="post" action="http://localhost:8888/bio">
+                  <!-- name -->
+                  <label for="">First name:*</label>
+                  <input name="f"  type="text"><br><br>
+                  <label for="">last name:*</label>
+                  <input name="l"  type="text"><br><br>
+                  <label for="">nickname:</label>
+                  <input  name="n" type="text"><br><br>
+                  <!-- age,sex,nationality -->
+                  <label for="">age:*</label>
+                  <input name="a" type="text"><br><br>
+                  <label for="">sex:*</label>
+                  <!-- sex -->
+                  <input name="s" type="radio" value="male">male <input name="s" type="radio" value="female">female<br><br>
+                  <!-- nationality -->
+                  <label for="">nationality:AMERICAN</label>
+                  <input name="na" type="radio" value="yes">yes <input name="na" type="radio" value="no">no<br><br>
+                  <!-- submit -->
+                  <h3>hoeless status</h3>
+                  <label for="">🧑‍🍳homeless period:*</label>
+                  <input name="ho" type="radio" value="less than month"> less than month 
+                  <input name="ho" type="radio" value=" less than year">less than year
+                  <input name="ho" type="radio" value="more than year">more than year<br><br>
+                  <!-- substance use -->
+                  <label for="">🍺substance  use:</label>
+                  <input name="sub" type="radio" value="yes">yes 
+                  <input name="sub" type="radio" value="no">no<br><br>  
+                <h3>narration on data entry </h3>(optional)
+                <p>♾️please write the major notices that you look on the first glance</p>
+                <label for=""></label>
+                <input class="glance" name="nar" type="text"><br><br>
+                <button type="submit">submit</button>
+      </form><br><br><br>
+      <!-- homeless status -->
+        <!-- delete data filling -->
+  <div class="staff">
+    <form ondblclick="history.go(0)" method="post" action="http://localhost:8888/delete">
+      <input name="ww" placeholder="enter id number to deleted" type="text"><br><br><button type="submit">delete client data</button></form><br>
+      <!-- update data filling -->
+      <form class="update" method="post" action="http://localhost:8888/update"><br>        <input placeholder="client id" name="names" type="text">   <input placeholder="status in detail" class="statusdetail" name="status" type="text">
+         <button type="submit">update status </button></form>
+         <form method="post" action="http://localhost:8888/info"><br><br><br>
+          <button class="redd">high risk client</button>
+          </form><br>
+          <form method="post" action="http://localhost:8888/save">
+            <button>foreigner client</button>
+            <p class="definition">definition- <br>--- high risk client is a   homeless women client with age of less than 25 <br>--- foreigner client is defined as any homeless client who doesn't have an american nationality</p>
+          </form>
+  </div>
+  <form action="http://localhost:8888/comment" method="post">
+    <label for="comment"> <h3>vote our work from the lists below</h3> </label>
+    <input list="comment" name="comment" >
+    <datalist id="comment">
+      <option value="excellent(*****)">
+      <option value="very good(****)">
+      <option value="good (***)">
+      <option value="poor(**)">
+      <option value="bad (*)">
+    </datalist>
+    <input type="submit"><br><br><br>
+  </form>
+  </div>
+  </div></div>
+ 
+  <script src="./app.js"></script>
+<script src="./g4.js"></script>
+</body>
+</html>

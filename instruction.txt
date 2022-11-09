@@ -1,0 +1,19 @@
+create a database with the following form
+    host:"localhost",
+    password:"",
+    user:'root',
+    database:"g4"
+
+***************
+on your terminal 
+1st-npm init --y
+2nd -npm i express nodemon mysql dotenv
+
+***************
+
+
+run your code with node/nodemon as node g4.js or nodemon g4.js
+if error occurs re run your node
+
+
+

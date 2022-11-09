@@ -1,0 +1,52 @@
+body{
+    display: inline-block;
+}
+/* .signin{
+    display:none;
+} */
+.outer{
+/* display: none; */
+    background-color: rgb(217, 207, 194);
+    width: 700px;
+    
+margin: 0 auto;
+}
+input{
+    border: 1px solid rgb(6, 6, 17);
+    border-radius: 5px;
+    margin-left: 20px ;
+    padding-left: 35px;
+}
+h1{
+ text-align: center;
+ color: rgb(15, 4, 71);
+}
+
+.glance{
+    width: 600px;
+    height: 30px;
+    background-color: rgb(228, 237, 234);
+}
+.staff{
+    background-color: rgb(149, 193, 246);
+    padding: 20px ;
+    border: 3px solid blue;
+}
+.staff button{
+    height: 35px;
+    background-color: rgb(233, 244, 235);
+    border: 1px solid rgb(214, 7, 7);
+    border-radius: 7px ;
+}
+.staff button:hover{
+    background-color: rgb(195, 159, 219);
+}
+.statusdetail {
+    width: 300px;
+    height: 30px;
+    
+}
+.definition{
+    background-color: azure;
+    padding: 10px;
+}
